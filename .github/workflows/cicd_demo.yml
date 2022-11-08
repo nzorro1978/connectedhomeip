@@ -26,5 +26,5 @@ jobs:
       steps:
         - name: Run lighting-app for 120 seconds
           run: |
-            cd examples/lighting-app/linux
-     	    timeout 120s ./out/debug/chip-lighting-app || code=$?; if [[ $code -ne 124 && $code -ne 0 ]]; then exit $code; fi
+            cd examples/lighting-app/linux     	    
+            timeout 120s ./out/debug/chip-lighting-app || code=$?; if [[ $code -ne 124 && $code -ne 0 ]]; then exit $code; fi
